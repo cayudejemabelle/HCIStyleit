@@ -1,0 +1,21 @@
+{
+  "name": "styleit-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "StyleIt backend: Express + SQLite, organised as MVC",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "mail:test": "node --disable-warning=ExperimentalWarning scripts/send-test-email.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  }
+}
