@@ -17,7 +17,7 @@ export const PORT = Number(process.env.PORT) || 3000
 export const DB_FILE = process.env.DB_FILE || (process.env.NODE_TEST_CONTEXT ? ':memory:' : 'styleit.db')
 export const SECRET = process.env.JWT_SECRET || 'dev-secret-change-me' // signs login tokens
 export const TOKEN_DAYS = 7
-export const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173' // your React app
+export const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'https://hci-styleit.vercel.app' // your React app
 // The Google / Facebook buttons are a DEMO (they do not talk to Google or Facebook).
 // Anyone who knows an email that signed up this way could sign in as it. Turn off with DEMO_SOCIAL=false.
 export const DEMO_SOCIAL = process.env.DEMO_SOCIAL !== 'false'
